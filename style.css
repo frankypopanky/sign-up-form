@@ -5,13 +5,15 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norsebold.otf");
+  }
 a{
     
     color:antiquewhite;
 }
-input{
-    
-}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -25,7 +27,7 @@ input{
 .left-side{
     align-self: auto;
     background-image: url(ivan-dimitrov-KR9HUvL8qJQ-unsplash.jpg);
-    background-size: cover%;
+    background-size: cover;
     grid-column-start:1;
     grid-column-end:span 1;
     grid-row-start:1;
@@ -62,7 +64,8 @@ input{
 }
 .logo h1{
     font-weight: 100;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
+    font-family: "Norse Bold";
 }
 .mention{
     background-color: rgba(164, 183, 192, 0.336);
