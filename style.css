@@ -1,5 +1,160 @@
 * {
     margin: 0em;
     padding: 0rem;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+a{
     
+    color:antiquewhite;
+}
+input{
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 0rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-side{
+    align-self: auto;
+    background-image: url(ivan-dimitrov-KR9HUvL8qJQ-unsplash.jpg);
+    background-size: cover%;
+    grid-column-start:1;
+    grid-column-end:span 1;
+    grid-row-start:1;
+    grid-row-end: span 4;
+    background-size: cover;
+    
+}
+.left-side > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side > div > div > div{
+    display: inline-flex;
+    flex-direction: row;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+}
+.left-side > div > div > div > div{
+    align-self: center;
+   
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(164, 183, 192, 0.336);
+    margin-top: 3.5rem;
+    color: whitesmoke;
+    font-size: 2em;
+    padding:1rem;
+}
+.logo h1{
+    font-weight: 100;
+    letter-spacing: 1rem;
+}
+.mention{
+    background-color: rgba(164, 183, 192, 0.336);
+    color: whitesmoke;
+    font-size: 12px;
+    padding:0.5rem;
+  
+}
+.welcome-text{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    padding-left: 2rem;
+    padding-top: 5vh;
+    line-height: 3rem;
+    background-color: rgba(98, 137, 155, 0.171);
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(51, 52, 53, 0.466);
+    height:29vh;
+}
+.signin-form{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    display:block;
+    box-shadow: 6px 2px 2px rgba(173, 184, 192, 0.575);
+    padding: 2rem;
+    line-height: 1,5rem;
+    height:45vh;
+
+}
+.signin-form h2{
+    text-align: left;
+    color: rgba(42, 79, 109, 0.705);
+    
+}
+
+.footer{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2em;
+    background-color: rgba(49, 34, 17, 0.075);
+    height:26vh;
+}
+.footer a{
+    text-decoration: none;
+    color: rgba(48, 83, 105, 0.808);
+}
+
+input{
+    margin-right: 2rem;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid rgb(165, 167, 156);
+    outline: 0em;
+    padding-left: 0.5rem;
+}
+input[type="submit"] {
+    background-color: rgba(61, 48, 3, 0.658);
+    width: 8rem;
+    color: antiquewhite;
+}
+
+input:focus{
+    border: 2px solid rgba(69, 69, 78, 0.438);
+    box-shadow: 3px 2px 2px lightgray;
+}
+
+label{
+    font-size: medium;
+    color: rgb(40, 92, 141);
+}
+
+.form-flex{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-flex > div{
+    display:inline-flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.mention{
+    align-self: flex-end;
 }
